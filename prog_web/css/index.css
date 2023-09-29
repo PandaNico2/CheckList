@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Commissioner:wght@700&display=swap');
+
+
+:root {
+  --lilas: #cb6be6;
+  /* Principal */
+  --hover: #9c53b1;
+  /* hover */
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+/* barra de navegação */
+nav.navbar {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+div.rigth {
+  display: inline-flex;
+  align-items: center;
+  min-width: 150px;
+  justify-content: space-between;
+}
+
+/* usuario e sair */
+div.usuario {
+  display: inline-flex;
+  align-items: center;
+  padding-right: 20px
+}
+
+div.usuario p {
+  margin: 0;
+  padding-left: 10px;
+}
+
+div.sair,
+div.usuario {
+  color: var(--lilas);
+}
+
+/* começar */
+
+#comecar {
+  background-color: var(--lilas);
+  border: 0;
+  color: white;
+  border-radius: 15px;
+  padding: 5px 30px;
+  text-transform: uppercase;
+}
+
+#comecar i {
+  padding-left: 5px;
+}
+
+#comecar:hover {
+  background-color: var(--hover);
+}
+
+@keyframes moveRightLeft {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+#comecar:hover i {
+  animation: moveRightLeft 4s e ase-in-out infinite;
+}
+
+/* banner */
+div.banner {
+  background-color: var(--lilas);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 5px
+}
+
+.banner a {
+  color: white
+}
+
+.banner a:hover {
+  color: var(--hover);
+}
+
+/* img inicial */
+div.img_pricipal {
+  width: 100%;
+}
+
+div.img_pricipal img {
+  width: 100%
+}
+
+/* box */
+div.box {
+  display: inline-flex;
+  width: 100%;
+  padding: 0px 50px;
+  min-height: 500px;
+}
+
+div.content_rigth {
+  width: 70%;
+}
+
+div.content_left {
+  width: 30%;
+  margin-right: 10px;
+  border-right: 1px solid;
+}
+
+/* Lista */
+div.item {
+  display: inline-flex;
+  width: 100%;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+div.info_lista{
+  display: inline-flex
+}
+
+
+div.item {
+  padding: 10px;
+}
+
+div.item.ativo {
+  background-color: rgba(187, 252, 187, 0.89);
+  border-radius: 8px;
+}
+
+.inicial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+}
+
+#acessar {
+  width: 20px;
+  font-size: 16px;
+}
+
+input#tarefa {
+  border-radius: 10px 0px 0px 10px;
+  width: 90%;
+  height: 40px;
+  border-width: 1px 0px 1px 1px;
+  border-style: solid;
+  border-color: #f4e0f9;
+  padding: 0px 10px;
+}
+
+button.but {
+  background-color: var(--lilas);
+  color: white;
+  border-width: 1px 1px 1px 0px;
+  border-style: solid;
+  border-color: #f4e0f9;
+  border-radius: 0px 10px 10px 0px;
+  width: 40px;
+  height: 40px;
+}
+
+input#verifica {
+  width: 20px;
+  margin: 10px
+}
+
+button#editar:hover,
+button#remover:hover {
+  background-color: var(--hover);
+  color: white;
+}
+
+button#editar,
+button#remover {
+  background-color: transparent;
+  border: 1px solid;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+button#editar {
+  margin-right: 10px
+}
+
+p#texto {
+  margin-bottom: 0 !important;
+  padding: 5px;
+  margin: 0px 10px;
+  max-width: 700px;
+}
+
+
+/* blocos esquerda */
+div.content_left .filtro {
+  height: 200px;
+  border-bottom: 1px solid;
+}
+
+div.lista_filtros,
+div.lista_minhas_listas {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+div.lista_minhas_listas input {
+  margin-right: 5px
+}
